@@ -19,12 +19,13 @@ public class chatroomSend extends JFrame implements ActionListener {
     String message = "";
     String dataToSend = "";
 
-    String messageFrom;
+    String messageFrom = "";
 
     int toPort = 55555;
     String group = "224.0.0.1";
     InetAddress toAdr = InetAddress.getByName(group);
     MulticastSocket mSocket = new MulticastSocket();
+
 
     public chatroomSend()throws UnknownHostException, SocketException, IOException, InterruptedException{
 
@@ -32,8 +33,6 @@ public class chatroomSend extends JFrame implements ActionListener {
         if (nickname == null || nickname.length() == 0){
             System.exit(0);
         }
-
-
         this.add(panel);
         panel.add(text);
         panel.add(button);
@@ -46,6 +45,10 @@ public class chatroomSend extends JFrame implements ActionListener {
         this.setLocation(800, 300);
         this.setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        chatroomReceive m = new chatroomReceive(messageFrom, mSocket);
+        Thread t = new Thread(m);
+        t.start();
 
     }
 
@@ -61,14 +64,14 @@ public class chatroomSend extends JFrame implements ActionListener {
         catch(Exception e){
             e.printStackTrace();
         }
-        textArea.setText(nickname + ": " + message);
+        //textArea.setText(nickname + ": " + message);
         text.setText("");
         textArea.setText(messageFrom);
 
     }
 
-
     public static void main(String[] args) throws UnknownHostException, SocketException, IOException, InterruptedException{
         chatroomSend ts = new chatroomSend();
+
     }
 }
