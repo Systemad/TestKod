@@ -16,6 +16,7 @@ public class MulticastSender {
     int port = 20480;
     MulticastSocket socket = new MulticastSocket(port);
 
+
     DatagramPacket packet;
     byte[] data;
     String prompt = "What do you want to send? ";

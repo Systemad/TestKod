@@ -1,16 +1,16 @@
-package Temperature;
+package Chatroom;
 import java.io.IOException;
 import java.net.*;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-public class TemperatureCollector extends JFrame  {
+public class chatroomReceive extends JFrame  {
 
     JPanel panel = new JPanel();
     JTextArea text = new JTextArea(30, 20);
 
-    public TemperatureCollector() throws SocketException, IOException{
+    public chatroomReceive() throws SocketException, IOException{
         this.add(panel);
         panel.add(text);
         this.pack();
@@ -35,7 +35,7 @@ public class TemperatureCollector extends JFrame  {
     }
 
     public static void main(String[] args) throws SocketException, IOException{
-        TemperatureCollector tc = new TemperatureCollector();
+        chatroomReceive tc = new chatroomReceive();
     }
 
 
