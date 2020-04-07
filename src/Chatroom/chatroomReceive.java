@@ -7,7 +7,12 @@ import javax.swing.JTextArea;
 
 public class chatroomReceive implements Runnable {
 
+    private String textArea;
+
+
     public chatroomReceive(String textArea, MulticastSocket mSocket) throws SocketException, IOException{
+
+        this.textArea = textArea;
 
         //int minPort = 55555;
         String ip = "224.0.0.1";
