@@ -56,10 +56,12 @@ public class ReadThread implements Runnable {
             byte[] data = new byte[256];
             DatagramPacket packet = new DatagramPacket(data, data.length);
             String message;
+
             try{
+
                 socket.receive(packet);
                 message = new String(packet.getData(), 0, packet.getLength());
-                //System.out.print(message);
+                System.out.print(message);
             }
             catch(IOException e){
                 System.out.print("Connection Closed");
