@@ -81,19 +81,21 @@ public class chatroomSend extends JFrame implements ActionListener {
 public class chatroomSend extends JFrame implements ActionListener {
 
     JPanel panel = new JPanel();
-    JTextField text = new JTextField(10);
+    JTextField textField = new JTextField(10);
     JTextArea textArea = new JTextArea(30, 20);
 
 
     JButton button = new JButton("Send");
+    JButton disconnect = new JButton("Disconnect");
+
     String nickname;
     String message = "";
     String dataToSend = "";
 
-    int toPort = 55555;
+    int port = 55555;
     String group = "224.0.0.1";
     InetAddress toAdr = InetAddress.getByName(group);
-    MulticastSocket socket = new MulticastSocket(toPort);
+    MulticastSocket socket = new MulticastSocket(port);
 
 
     public chatroomSend()throws UnknownHostException, SocketException, IOException, InterruptedException{
@@ -103,13 +105,28 @@ public class chatroomSend extends JFrame implements ActionListener {
             System.exit(0);
         }
         this.add(panel);
-        panel.add(text);
+        panel.add(textField);
         panel.add(button);
         panel.add(textArea);
 
         button.addActionListener(this);
-        text.addActionListener(this);
+        textField.addActionListener(this);
 
+        disconnect.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try{
+                    socket.leaveGroup(toAdr);
+                }
+                catch(IOException ex){
+                    System.out.print("Couldn't leave group");
+                }
+                textArea.append("You have been disconnected");
+            }
+        });
+
+
+        textArea.setEditable(false);
         this.pack();
         this.setLocation(800, 300);
         this.setVisible(true);
@@ -124,21 +141,17 @@ public class chatroomSend extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        message = text.getText();
+        message = textField.getText();
         dataToSend = nickname+": "+message;
         byte[] data = dataToSend.getBytes();
-        DatagramPacket packet = new DatagramPacket(data, data.length, toAdr, toPort);
+        DatagramPacket packet = new DatagramPacket(data, data.length, toAdr, port);
         try{
             socket.send(packet);
         }
         catch(Exception e){
             e.printStackTrace();
         }
-        //textArea.setText(nickname + ": " + message);
-        text.setText("");
-        //System.out.println(messageFrom);
-
-
+        textField.setText("");
     }
 
     public static void main(String[] args) throws UnknownHostException, SocketException, IOException, InterruptedException{
