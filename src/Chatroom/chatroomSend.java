@@ -1,5 +1,6 @@
 package Chatroom;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -82,16 +83,20 @@ public class chatroomSend extends JFrame implements ActionListener {
 
     JPanel panel = new JPanel();
     JTextField textField = new JTextField(10);
-    JTextArea textArea = new JTextArea(30, 20);
+    JTextArea textArea = new JTextArea(15, 25);
 
+    JScrollPane scrollPanel = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 
+    // Buttons
     JButton button = new JButton("Send");
     JButton disconnect = new JButton("Disconnect");
 
+    // Variables
     String nickname;
     String message = "";
     String dataToSend = "";
 
+    // Socket config
     int port = 55555;
     String group = "224.0.0.1";
     InetAddress toAdr = InetAddress.getByName(group);
@@ -104,10 +109,14 @@ public class chatroomSend extends JFrame implements ActionListener {
         if (nickname == null || nickname.length() == 0){
             System.exit(0);
         }
-        this.add(panel);
+
+        textArea.setFont(new Font("Monospace", Font.PLAIN, 15));
+        panel.setLayout(new GridLayout(1,6));
+        panel.add(new JLabel("Type something: ", JLabel.RIGHT));
+
         panel.add(textField);
         panel.add(button);
-        panel.add(textArea);
+        panel.add(disconnect);
 
         button.addActionListener(this);
         textField.addActionListener(this);
@@ -125,11 +134,11 @@ public class chatroomSend extends JFrame implements ActionListener {
             }
         });
 
-
         textArea.setEditable(false);
-        this.pack();
-        this.setLocation(800, 300);
-        this.setVisible(true);
+        add(panel, BorderLayout.SOUTH);
+        add(scrollPanel, BorderLayout.CENTER);
+        pack();
+        setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         socket.joinGroup(toAdr);

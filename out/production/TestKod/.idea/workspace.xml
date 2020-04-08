@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae034f0d-3af6-4c7e-bd72-a6b6ace44e41" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Chatroom/ReadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chatroom/ReadThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chatroom/chatroomSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chatroom/chatroomSend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chatroom/textgui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextEditor/TextEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextEditor/TextEditor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,20 +69,7 @@
       <recent name="interface" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.chatroomSend">
-    <configuration name="ReadThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chatroom.ReadThread" />
-      <module name="TestKod" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Chatroom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.textgui">
     <configuration name="TemperatureCollector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Temperature.TemperatureCollector" />
       <module name="TestKod" />
@@ -109,6 +96,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="chat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chatroom.chat" />
+      <module name="TestKod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Chatroom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="chatroomSend" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chatroom.chatroomSend" />
       <module name="TestKod" />
@@ -122,8 +122,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="receive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chatroom.receive" />
+    <configuration name="textgui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chatroom.textgui" />
       <module name="TestKod" />
       <extension name="coverage">
         <pattern>
@@ -138,17 +138,17 @@
     <list>
       <item itemvalue="Application.TemperatureCollector" />
       <item itemvalue="Application.TemperatureSend" />
-      <item itemvalue="Application.receive" />
       <item itemvalue="Application.chatroomSend" />
-      <item itemvalue="Application.ReadThread" />
+      <item itemvalue="Application.chat" />
+      <item itemvalue="Application.textgui" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.textgui" />
         <item itemvalue="Application.chatroomSend" />
+        <item itemvalue="Application.chat" />
         <item itemvalue="Application.TemperatureSend" />
         <item itemvalue="Application.TemperatureCollector" />
-        <item itemvalue="Application.ReadThread" />
-        <item itemvalue="Application.receive" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +173,8 @@
       <workItem from="1586199490761" duration="3300000" />
       <workItem from="1586246275076" duration="16238000" />
       <workItem from="1586329344090" duration="8628000" />
-      <workItem from="1586343677747" duration="736000" />
+      <workItem from="1586343677747" duration="3999000" />
+      <workItem from="1586348860057" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1586265602196</created>
@@ -224,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586339344159</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some fixes">
+      <created>1586348616463</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586348616463</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +242,8 @@
     <MESSAGE value="initial" />
     <MESSAGE value="Maybe fix" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Notifications" timestamp="1586248704420">
@@ -269,10 +278,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="519" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1586332471248" />
-    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1586339342862">
+    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1586348615021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586339342862" />
+    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586348615021" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1586248719712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -285,30 +294,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="555" y="35" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586248749734" />
-    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1586339896891">
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1586348737192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586339896891" />
-    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1586339896890">
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586348737192" />
+    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1586348737192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586339896890" />
-    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1586339896890">
+    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586348737192" />
+    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1586348737191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586339896890" />
-    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1586339896890">
+    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586348737191" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1586348737192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586339896890" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586348737192" />
     <state x="262" y="55" key="SettingsEditor" timestamp="1586265444763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="262" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586265444763" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1586339352782">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1586348621462">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586339352782" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586348621462" />
     <state x="420" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585656333961">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -321,6 +330,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="434" y="1" width="668" height="822" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1585926893310" />
+    <state x="481" y="186" key="git4idea.merge.GitPullDialog" timestamp="1586348224360">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="481" y="186" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1586348224360" />
     <state x="511" y="38" key="refactoring.ChangeSignatureDialog" timestamp="1586330374800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

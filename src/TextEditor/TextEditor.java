@@ -7,15 +7,17 @@ import javax.annotation.processing.Filer;
 import javax.swing.*;
 
 public class TextEditor extends JFrame implements ActionListener {
+
     private JPanel panel = new JPanel();
     private JTextField name = new JTextField();
 
     private JButton open = new JButton("Open File");
     private JButton save = new JButton("Save File");
+    /*
     private JButton write = new JButton("Write File");
     private JButton exit = new JButton("Exit");
     private JButton delete = new JButton("Delete");
-
+    */
     private JTextArea area = new JTextArea(10,60);
     private JScrollPane scrollPanel = new JScrollPane(area, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 
@@ -25,15 +27,15 @@ public class TextEditor extends JFrame implements ActionListener {
         panel.setLayout(new GridLayout(1,6));
         panel.add(new JLabel("Filename", JLabel.RIGHT));
         panel.add(name); panel.add(open); panel.add(save);
-        panel.add(write); panel.add(delete); panel.add(exit);
+        //panel.add(write); panel.add(delete); panel.add(exit);
 
         name.addActionListener(this);;
         open.addActionListener(this);
         save.addActionListener(this);
-        write.addActionListener(this);
-        delete.addActionListener(this);
+        //write.addActionListener(this);
+        //delete.addActionListener(this);
 
-        exit.addActionListener(this);
+        //exit.addActionListener(this);
 
         add(panel, BorderLayout.NORTH);
         add(scrollPanel, BorderLayout.CENTER);
@@ -48,6 +50,7 @@ public class TextEditor extends JFrame implements ActionListener {
             readFile(name.getText());
         else if (e.getSource() == save)
             saveFile(name.getText());
+        /*
         else if (e.getSource() == write)
             try{
                 area.print();
@@ -58,6 +61,8 @@ public class TextEditor extends JFrame implements ActionListener {
         }
         else if (e.getSource() == exit)
             System.exit(0);
+
+         */
     }
     private void readFile(String filename){
         String filepath = "C:\\Users\\Dan\\IdeaProjects\\TestKod\\src\\";
