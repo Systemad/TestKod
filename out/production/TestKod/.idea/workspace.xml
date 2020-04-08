@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae034f0d-3af6-4c7e-bd72-a6b6ace44e41" name="Default Changelist" comment="" />
+    <list default="true" id="ae034f0d-3af6-4c7e-bd72-a6b6ace44e41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Chatroom/chatroomReceive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chatroom/chatroomReceive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chatroom/chatroomSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chatroom/chatroomSend.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +33,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="systenad" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Dan\IdeaProjects\TestKod\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1ZqA3Gf63SAiOezAsZDEy38sCwn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,8 +58,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -49,35 +69,35 @@
       <recent name="interface" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TemperatureCollector">
-    <configuration name="MulticastReceiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="multicastSocket.MulticastReceiver" />
-      <module name="TestKod" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="multicastSocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MulticastSender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="multicastSocket.MulticastSender" />
-      <module name="TestKod" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="multicastSocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.chatroomSend">
     <configuration name="TemperatureCollector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chatroom.TemperatureCollector" />
+      <option name="MAIN_CLASS_NAME" value="Temperature.TemperatureCollector" />
+      <module name="TestKod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Temperature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemperatureSend" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Temperature.TemperatureSend" />
+      <module name="TestKod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Temperature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chatroomReceive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chatroom.chatroomReceive" />
       <module name="TestKod" />
       <extension name="coverage">
         <pattern>
@@ -89,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextEditor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TextEditor.TextEditor" />
+    <configuration name="chatroomSend" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chatroom.chatroomSend" />
       <module name="TestKod" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TextEditor.*" />
+          <option name="PATTERN" value="Temperature.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,8 +122,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="chatroom1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chatroom.chatroom1" />
+    <configuration name="receive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chatroom.receive" />
       <module name="TestKod" />
       <extension name="coverage">
         <pattern>
@@ -116,19 +136,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MulticastReceiver" />
-      <item itemvalue="Application.MulticastSender" />
-      <item itemvalue="Application.TextEditor" />
-      <item itemvalue="Application.chatroom1" />
       <item itemvalue="Application.TemperatureCollector" />
+      <item itemvalue="Application.TemperatureSend" />
+      <item itemvalue="Application.receive" />
+      <item itemvalue="Application.chatroomSend" />
+      <item itemvalue="Application.chatroomReceive" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.chatroomSend" />
+        <item itemvalue="Application.TemperatureSend" />
         <item itemvalue="Application.TemperatureCollector" />
-        <item itemvalue="Application.chatroom1" />
-        <item itemvalue="Application.TextEditor" />
-        <item itemvalue="Application.MulticastSender" />
-        <item itemvalue="Application.MulticastReceiver" />
+        <item itemvalue="Application.chatroomReceive" />
+        <item itemvalue="Application.receive" />
       </list>
     </recent_temporary>
   </component>
@@ -151,18 +171,45 @@
       <workItem from="1585920266585" duration="6499000" />
       <workItem from="1586156452211" duration="7745000" />
       <workItem from="1586199490761" duration="3300000" />
-      <workItem from="1586246275076" duration="458000" />
+      <workItem from="1586246275076" duration="16238000" />
+      <workItem from="1586329344090" duration="188000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1586265602196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586265602196</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <created>1586269807262</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586269807262</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial">
+      <created>1586270277502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586270277502</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Notifications" timestamp="1586200153066">
+    <state x="361" y="71" key="#Notifications" timestamp="1586248704420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1586200153066" />
+    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1586248704420" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586162071354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -171,10 +218,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="389" y="20" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585660428876" />
-    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1585826829404">
+    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1586252906298">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585826829404" />
+    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586252906298" />
     <state x="478" y="329" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585725625872">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -183,45 +230,73 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1585725630096" />
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585566737571">
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586264259064">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585566737571" />
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586264259064" />
     <state x="519" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585655839676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="519" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585655839676" />
-    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1586202808840">
+    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1586270276896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586202808840" />
-    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1586202808840">
+    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586270276896" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1586248719712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586202808840" />
-    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1586202808840">
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586248719712" />
+    <state x="629" y="307" key="Github.ShareDialog" timestamp="1586248743469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586202808840" />
-    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1586202808840">
+    <state x="629" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1586248743469" />
+    <state x="555" y="35" key="Github.UntrackedFilesDialog" timestamp="1586248749734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586202808840" />
-    <state x="262" y="55" key="SettingsEditor" timestamp="1585725508987">
+    <state x="555" y="35" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586248749734" />
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1586270907620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="262" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585725508987" />
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586270907620" />
+    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1586270907620">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586270907620" />
+    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1586270907620">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586270907620" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1586270907620">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586270907620" />
+    <state x="262" y="55" key="SettingsEditor" timestamp="1586265444763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="262" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586265444763" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1586270287353">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586270287353" />
     <state x="420" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585656333961">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="420" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585656333961" />
+    <state x="559" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586265530652">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="559" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1586265530652" />
     <state x="434" y="1" width="668" height="822" key="find.popup" timestamp="1585926893310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="434" y="1" width="668" height="822" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1585926893310" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586172956010">
+    <state x="511" y="38" key="refactoring.ChangeSignatureDialog" timestamp="1586268590173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586172956010" />
+    <state x="511" y="38" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1586268590173" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586252310544">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586252310544" />
   </component>
 </project>
