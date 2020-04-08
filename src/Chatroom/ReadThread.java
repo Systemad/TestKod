@@ -41,10 +41,11 @@ public class chatroomReceive implements Runnable {
 
 public class ReadThread implements Runnable {
 
+    //private InetAddress adr;
+    //private int port;
+    //private String ip;
+
     private MulticastSocket socket;
-    private InetAddress adr;
-    private int port;
-    private String ip;
     private JTextArea textArea;
     /*
     public ReadThread(MulticastSocket socket, InetAddress adr, int port) {
@@ -64,14 +65,12 @@ public class ReadThread implements Runnable {
             byte[] data = new byte[256];
             DatagramPacket packet = new DatagramPacket(data, data.length);
             String message;
-
             try{
                 //MulticastSocket socket = new MulticastSocket(port);
-
                 socket.receive(packet);
-
                 message = new String(packet.getData(), 0, packet.getLength());
-                textArea.setText(message);
+                textArea.append(message);
+                textArea.append("\n");
                 //System.out.print(message);
             }
             catch(IOException e){
