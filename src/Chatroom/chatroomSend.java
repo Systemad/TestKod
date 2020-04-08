@@ -93,7 +93,7 @@ public class chatroomSend extends JFrame implements ActionListener {
     int toPort = 55555;
     String group = "224.0.0.1";
     InetAddress toAdr = InetAddress.getByName(group);
-    MulticastSocket socket = new MulticastSocket();
+    MulticastSocket socket = new MulticastSocket(toPort);
 
 
     public chatroomSend()throws UnknownHostException, SocketException, IOException, InterruptedException{
@@ -116,7 +116,7 @@ public class chatroomSend extends JFrame implements ActionListener {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         socket.joinGroup(toAdr);
-        ReadThread m = new ReadThread(socket, toAdr, toPort);
+        ReadThread m = new ReadThread(socket, textArea);
         Thread t = new Thread(m);
         t.start();
 
@@ -143,7 +143,5 @@ public class chatroomSend extends JFrame implements ActionListener {
 
     public static void main(String[] args) throws UnknownHostException, SocketException, IOException, InterruptedException{
         chatroomSend ts = new chatroomSend();
-
-
     }
 }

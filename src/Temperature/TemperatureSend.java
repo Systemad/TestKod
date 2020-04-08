@@ -19,10 +19,10 @@ public class TemperatureSend extends JFrame implements ActionListener {
     String message = "";
     String dataToSend = "";
     //InetAddress toAdr = InetAddress.getLocalHost();
-    int toPort = 55555;
+    int port = 55555;
     String group = "224.0.0.1";
     InetAddress toAdr = InetAddress.getByName(group);
-    MulticastSocket mSocket = new MulticastSocket();
+    MulticastSocket mSocket = new MulticastSocket(port);
 
     public TemperatureSend()throws UnknownHostException, SocketException, IOException, InterruptedException{
 
@@ -54,9 +54,9 @@ public class TemperatureSend extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         message = text.getText();
-        dataToSend = nickname+", "+message;
+        dataToSend = nickname+": "+message;
         byte[] data = dataToSend.getBytes();
-        DatagramPacket packet = new DatagramPacket(data, data.length, toAdr, toPort);
+        DatagramPacket packet = new DatagramPacket(data, data.length, toAdr, port);
         try{
             mSocket.send(packet);
         }

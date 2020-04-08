@@ -1,4 +1,5 @@
 package Chatroom;
+import javax.swing.*;
 import java.awt.desktop.SystemEventListener;
 import java.io.IOException;
 import java.net.*;
@@ -39,15 +40,22 @@ public class chatroomReceive implements Runnable {
 */
 
 public class ReadThread implements Runnable {
+
     private MulticastSocket socket;
-    private  InetAddress adr;
+    private InetAddress adr;
     private int port;
     private String ip;
-
+    private JTextArea textArea;
+    /*
     public ReadThread(MulticastSocket socket, InetAddress adr, int port) {
         this.socket = socket;
         this.adr = adr;
         this.port = port;
+    }
+    */
+    public ReadThread(MulticastSocket socket, JTextArea textArea) {
+        this.socket = socket;
+        this.textArea = textArea;
     }
 
     @Override
@@ -58,10 +66,13 @@ public class ReadThread implements Runnable {
             String message;
 
             try{
+                //MulticastSocket socket = new MulticastSocket(port);
 
                 socket.receive(packet);
+
                 message = new String(packet.getData(), 0, packet.getLength());
-                System.out.print(message);
+                textArea.setText(message);
+                //System.out.print(message);
             }
             catch(IOException e){
                 System.out.print("Connection Closed");
